@@ -43,6 +43,9 @@
             btnsalvafile = new Button();
             btnimportafile = new Button();
             btnripulirefile = new Button();
+            txtcercagioco = new TextBox();
+            lblcercagioco = new Label();
+            btncercavideogioco = new Button();
             SuspendLayout();
             // 
             // btncarica
@@ -122,7 +125,7 @@
             lbltipgioco.AutoSize = true;
             lbltipgioco.Location = new Point(13, 159);
             lbltipgioco.Name = "lbltipgioco";
-            lbltipgioco.Size = new Size(106, 15);
+            lbltipgioco.Size = new Size(107, 15);
             lbltipgioco.TabIndex = 9;
             lbltipgioco.Text = "TIPOLOGIA GIOCO";
             // 
@@ -164,21 +167,52 @@
             btnimportafile.TabIndex = 13;
             btnimportafile.Text = "Importa nel file";
             btnimportafile.UseVisualStyleBackColor = true;
+            btnimportafile.Click += btnimportafile_Click;
             // 
             // btnripulirefile
             // 
-            btnripulirefile.Location = new Point(615, 386);
+            btnripulirefile.Location = new Point(1198, 688);
             btnripulirefile.Name = "btnripulirefile";
             btnripulirefile.Size = new Size(159, 52);
             btnripulirefile.TabIndex = 14;
             btnripulirefile.Text = "RIPULIRE FILE";
             btnripulirefile.UseVisualStyleBackColor = true;
+            btnripulirefile.Click += btnripulirefile_Click;
+            // 
+            // txtcercagioco
+            // 
+            txtcercagioco.Location = new Point(52, 385);
+            txtcercagioco.Name = "txtcercagioco";
+            txtcercagioco.Size = new Size(239, 23);
+            txtcercagioco.TabIndex = 15;
+            // 
+            // lblcercagioco
+            // 
+            lblcercagioco.AutoSize = true;
+            lblcercagioco.Location = new Point(52, 367);
+            lblcercagioco.Name = "lblcercagioco";
+            lblcercagioco.Size = new Size(204, 15);
+            lblcercagioco.TabIndex = 16;
+            lblcercagioco.Text = "Inserisci il nome del gioco da cercare:";
+            // 
+            // btncercavideogioco
+            // 
+            btncercavideogioco.Location = new Point(307, 367);
+            btncercavideogioco.Name = "btncercavideogioco";
+            btncercavideogioco.Size = new Size(108, 41);
+            btncercavideogioco.TabIndex = 17;
+            btncercavideogioco.Text = "CERCA";
+            btncercavideogioco.UseVisualStyleBackColor = true;
+            btncercavideogioco.Click += btncercavideogioco_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(786, 450);
+            ClientSize = new Size(1369, 752);
+            Controls.Add(btncercavideogioco);
+            Controls.Add(lblcercagioco);
+            Controls.Add(txtcercagioco);
             Controls.Add(btnripulirefile);
             Controls.Add(btnimportafile);
             Controls.Add(btnsalvafile);
@@ -217,5 +251,8 @@
         private Button btnsalvafile;
         private Button btnimportafile;
         private Button btnripulirefile;
+        private TextBox txtcercagioco;
+        private Label lblcercagioco;
+        private Button btncercavideogioco;
     }
 }

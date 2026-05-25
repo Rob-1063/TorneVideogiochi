@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 namespace progettoTorneoVideogiochi
@@ -67,7 +68,9 @@ namespace progettoTorneoVideogiochi
         //Procedura che stampa tutto quello che c'è scritto nella lista dentro il file
         void SalvaFile()
         {
-            if(Partecipante.Count == 0)
+
+            File.WriteAllText(Percorsofile, String.Empty);
+            if (Partecipante.Count == 0)
             {
                 MessageBox.Show("Lista Vuota");
                 return;
@@ -89,6 +92,67 @@ namespace progettoTorneoVideogiochi
                 MessageBox.Show("Errore nel salvataggio dati");
             }
         }
+        //Procedura che permette di importate tutte le informazioni nel file dei partecipanti dentro la lista
+        void importafile()
+        {
+            string percorsoFile = "StampaPartecipanti.txt";
+            if (!File.Exists(percorsoFile))
+            {
+                MessageBox.Show("File non trovato!");
+            }
+            try
+            {
+                Partecipante.Clear();
+                lstregistrazioneutenti.Items.Clear();
+
+                using (StreamReader sr = new StreamReader(percorsoFile))
+                {
+                    string riga;
+
+                    while ((riga = sr.ReadLine()) != null)
+                    {
+
+                        if (!string.IsNullOrWhiteSpace(riga))
+                        {
+                            string[] pezzi = riga.Split('|');
+                            if (pezzi.Length == 6)
+                            {
+
+                                Giocatore giocatore = new Giocatore();
+                                giocatore.nome = pezzi[0].Replace("N:", "").Trim();
+
+                                giocatore.cognome = pezzi[1].Replace("C:", "").Trim();
+
+                                giocatore.nickname = pezzi[2].Replace("Nick:", "").Trim();
+
+                                giocatore.gioco.titolo = pezzi[4].Replace("Titolo:", "").Trim();
+
+                                giocatore.gioco.tipologia = pezzi[5].Replace("Tipo:", "").Trim();
+                                Partecipante.Add(giocatore);
+                                lstregistrazioneutenti.Items.Add("N: " + giocatore.nome + " |" + "C: " + giocatore.cognome + " |" + "Nick: " + giocatore.nickname + " |" + "Score: " + giocatore.punteggio + " |" + "Titolo: " + giocatore.gioco.titolo + " |" + "Tipo: " + giocatore.gioco.tipologia);
+                            }
+                        }
+                    }
+                }
+                MessageBox.Show("Dati caricati nella lista concatenata!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Errore durante la lettura!" + ex.Message);
+            }
+        }
+
+        void cercaVideogioco()
+        {
+            lstregistrazioneutenti.Items.Clear();
+            foreach (Giocatore g in Partecipante)
+            {
+                if (g.gioco.titolo == txtcercagioco.Text)
+                {
+                    lstregistrazioneutenti.Items.Add(g.Scrivi());
+                }
+            }
+        }
 
         //Bottone sul quale si salva la lista e la si stampa nella list box 
         private void btncarica_Click(object sender, EventArgs e)
@@ -100,7 +164,24 @@ namespace progettoTorneoVideogiochi
 
         private void btnsalvafile_Click(object sender, EventArgs e)
         {
+            lstregistrazioneutenti.Items.Clear();
             SalvaFile();
+        }
+
+        private void btnimportafile_Click(object sender, EventArgs e)
+        {
+            lstregistrazioneutenti.Items.Clear();
+            importafile();
+        }
+
+        private void btncercavideogioco_Click(object sender, EventArgs e)
+        {
+            cercaVideogioco();
+        }
+
+        private void btnripulirefile_Click(object sender, EventArgs e)
+        {
+            File.WriteAllText(Percorsofile, String.Empty);
         }
     }
 

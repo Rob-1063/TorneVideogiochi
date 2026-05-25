@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\floresnavarro.robert\\source\\repos\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj": {}
+    "C:\\Users\\floresnavarro.robert\\Downloads\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\floresnavarro.robert\\source\\repos\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj": {
+    "C:\\Users\\floresnavarro.robert\\Downloads\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\floresnavarro.robert\\source\\repos\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj",
+        "projectUniqueName": "C:\\Users\\floresnavarro.robert\\Downloads\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj",
         "projectName": "progettoTorneoVideogiochi",
-        "projectPath": "C:\\Users\\floresnavarro.robert\\source\\repos\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj",
+        "projectPath": "C:\\Users\\floresnavarro.robert\\Downloads\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj",
         "packagesPath": "C:\\Users\\floresnavarro.robert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\floresnavarro.robert\\source\\repos\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\obj\\",
+        "outputPath": "C:\\Users\\floresnavarro.robert\\Downloads\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
