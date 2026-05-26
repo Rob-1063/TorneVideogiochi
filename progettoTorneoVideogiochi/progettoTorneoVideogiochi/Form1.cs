@@ -13,6 +13,7 @@ namespace progettoTorneoVideogiochi
         List<Giocatore> Partecipante = new List<Giocatore>();
 
         string Percorsofile = "StampaPartecipanti.txt";
+        string PercorsoFilePartecGioco = "StampaPartecipantiAdUnGioco.txt";
         //dichiarazione struct Videogioco
         struct Videogioco
         {
@@ -147,10 +148,32 @@ namespace progettoTorneoVideogiochi
             {
                 if (g.gioco.titolo == txtcercagioco.Text)
                 {
+
                     lstregistrazioneutenti.Items.Add(g.Scrivi());
+                    File.WriteAllText(PercorsoFilePartecGioco, String.Empty);
+                    if (Partecipante.Count == 0)
+                    {
+                        MessageBox.Show("Lista Vuota");
+                        return;
+                    }
+                    try
+                    {
+                        using (StreamWriter sw = new StreamWriter(PercorsoFilePartecGioco, false))
+                        {
+                            sw.WriteLine(g.Scrivi());
+                        }
+
+                        MessageBox.Show("Dati salvati con successo nel file");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Errore nel salvataggio dati");
+                    }
                 }
             }
         }
+    
+        
 
         //Bottone sul quale si salva la lista e la si stampa nella list box 
         private void btncarica_Click(object sender, EventArgs e)

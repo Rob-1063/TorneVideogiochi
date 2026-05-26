@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("progettoTorneoVideogiochi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cce7c17e2ccd42da1667710b8251f65a2a520570")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9479f117eaaf1f1f819084715985c24ef021b915")]
 [assembly: System.Reflection.AssemblyProductAttribute("progettoTorneoVideogiochi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("progettoTorneoVideogiochi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
