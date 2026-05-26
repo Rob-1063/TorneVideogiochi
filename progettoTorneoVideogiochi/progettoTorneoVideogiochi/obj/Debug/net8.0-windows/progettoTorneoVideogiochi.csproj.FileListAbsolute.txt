@@ -66,3 +66,21 @@ C:\Users\pasquetti.davide\Desktop\Progetti GIthub\TorneVideogiochi\progettoTorne
 C:\Users\pasquetti.davide\Desktop\Progetti GIthub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.pdb
 C:\Users\pasquetti.davide\Desktop\Progetti GIthub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.genruntimeconfig.cache
 C:\Users\pasquetti.davide\Desktop\Progetti GIthub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\ref\progettoTorneoVideogiochi.dll
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\bin\Debug\net8.0-windows\progettoTorneoVideogiochi.exe
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\bin\Debug\net8.0-windows\progettoTorneoVideogiochi.deps.json
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\bin\Debug\net8.0-windows\progettoTorneoVideogiochi.runtimeconfig.json
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\bin\Debug\net8.0-windows\progettoTorneoVideogiochi.dll
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\bin\Debug\net8.0-windows\progettoTorneoVideogiochi.pdb
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.Form1.resources
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.Properties.Resources.resources
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.csproj.GenerateResource.cache
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.AssemblyInfoInputs.cache
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.AssemblyInfo.cs
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.csproj.CoreCompileInputs.cache
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.sourcelink.json
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.dll
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\refint\progettoTorneoVideogiochi.dll
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.pdb
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\progettoTorneoVideogiochi.genruntimeconfig.cache
+C:\Users\rober\Documents\GitHub\TorneVideogiochi\progettoTorneoVideogiochi\progettoTorneoVideogiochi\obj\Debug\net8.0-windows\ref\progettoTorneoVideogiochi.dll

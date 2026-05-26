@@ -8,24 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\pasquetti.davide\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\rober\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pasquetti.davide\\Desktop\\Progetti GIthub\\TorneVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj",
+      "projectUniqueName": "C:\\Users\\rober\\Documents\\GitHub\\TorneVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj",
       "projectName": "progettoTorneoVideogiochi",
-      "projectPath": "C:\\Users\\pasquetti.davide\\Desktop\\Progetti GIthub\\TorneVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj",
-      "packagesPath": "C:\\Users\\pasquetti.davide\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pasquetti.davide\\Desktop\\Progetti GIthub\\TorneVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\obj\\",
+      "projectPath": "C:\\Users\\rober\\Documents\\GitHub\\TorneVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi.csproj",
+      "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rober\\Documents\\GitHub\\TorneVideogiochi\\progettoTorneoVideogiochi\\progettoTorneoVideogiochi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\pasquetti.davide\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,7 +46,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -67,6 +62,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.23, 8.0.23]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -75,7 +88,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

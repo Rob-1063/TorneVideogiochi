@@ -54,9 +54,10 @@
             lblcognomeG = new Label();
             label1 = new Label();
             label2 = new Label();
-            pictureBox1 = new PictureBox();
+            picboxavatarG = new PictureBox();
+            lblnickname = new Label();
             ((System.ComponentModel.ISupportInitialize)picboxprofilogiocatore).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picboxavatarG).BeginInit();
             SuspendLayout();
             // 
             // btncarica
@@ -219,7 +220,7 @@
             // lblprofiligiocatori
             // 
             lblprofiligiocatori.AutoSize = true;
-            lblprofiligiocatori.Location = new Point(853, 80);
+            lblprofiligiocatori.Location = new Point(913, 77);
             lblprofiligiocatori.Name = "lblprofiligiocatori";
             lblprofiligiocatori.Size = new Size(246, 15);
             lblprofiligiocatori.TabIndex = 18;
@@ -227,7 +228,7 @@
             // 
             // txtnomegiocatore
             // 
-            txtnomegiocatore.Location = new Point(887, 98);
+            txtnomegiocatore.Location = new Point(947, 95);
             txtnomegiocatore.Name = "txtnomegiocatore";
             txtnomegiocatore.Size = new Size(177, 23);
             txtnomegiocatore.TabIndex = 19;
@@ -237,7 +238,7 @@
             picboxprofilogiocatore.Image = (Image)resources.GetObject("picboxprofilogiocatore.Image");
             picboxprofilogiocatore.Location = new Point(839, 127);
             picboxprofilogiocatore.Name = "picboxprofilogiocatore";
-            picboxprofilogiocatore.Size = new Size(304, 285);
+            picboxprofilogiocatore.Size = new Size(388, 401);
             picboxprofilogiocatore.TabIndex = 20;
             picboxprofilogiocatore.TabStop = false;
             // 
@@ -287,23 +288,36 @@
             label2.TabIndex = 24;
             label2.Text = "NOME IN GIOCO:";
             // 
-            // pictureBox1
+            // picboxavatarG
             // 
-            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1110, 521);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(124, 112);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 25;
-            pictureBox1.TabStop = false;
+            picboxavatarG.BackColor = Color.Transparent;
+            picboxavatarG.BackgroundImageLayout = ImageLayout.None;
+            picboxavatarG.Image = (Image)resources.GetObject("picboxavatarG.Image");
+            picboxavatarG.Location = new Point(1114, 141);
+            picboxavatarG.Name = "picboxavatarG";
+            picboxavatarG.Size = new Size(98, 96);
+            picboxavatarG.SizeMode = PictureBoxSizeMode.CenterImage;
+            picboxavatarG.TabIndex = 25;
+            picboxavatarG.TabStop = false;
+            // 
+            // lblnickname
+            // 
+            lblnickname.AutoSize = true;
+            lblnickname.BackColor = Color.Black;
+            lblnickname.ForeColor = Color.AliceBlue;
+            lblnickname.Location = new Point(853, 264);
+            lblnickname.Name = "lblnickname";
+            lblnickname.Size = new Size(12, 15);
+            lblnickname.TabIndex = 26;
+            lblnickname.Text = "-";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1369, 752);
-            Controls.Add(pictureBox1);
+            Controls.Add(lblnickname);
+            Controls.Add(picboxavatarG);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(lblcognomeG);
@@ -332,7 +346,7 @@
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)picboxprofilogiocatore).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picboxavatarG).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -364,6 +378,7 @@
         private Label lblcognomeG;
         private Label label1;
         private Label label2;
-        private PictureBox pictureBox1;
+        private PictureBox picboxavatarG;
+        private Label lblnickname;
     }
 }
