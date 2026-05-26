@@ -1,0 +1,6 @@
+N: giovanni |C: beacci |Nick: amoifurry67 |Score: 161507 |Titolo: doki doki |Tipo: azione
+N: beacci |C: sigma |Nick: aura |Score: 110241 |Titolo: yahya |Tipo: horror
+N: prova |C: prova |Nick: aua |Score: 75727 |Titolo: yahya |Tipo: azione
+N: sigma |C: ligma |Nick: ligmaballs |Score: 43615 |Titolo: aura |Tipo: hentai
+N: ciao |C: beacci |Nick: sigma |Score: 137369 |Titolo: yahya |Tipo: horror
+N: iaha |C: poiajf |Nick: oijw |Score: 51196 |Titolo: yahya |Tipo: dsf

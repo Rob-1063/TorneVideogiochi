@@ -117,17 +117,15 @@ namespace progettoTorneoVideogiochi
                             string[] pezzi = riga.Split('|');
                             if (pezzi.Length == 6)
                             {
-
                                 Giocatore giocatore = new Giocatore();
+                                //solo in questa parte abbiamo usato l'IA
                                 giocatore.nome = pezzi[0].Replace("N:", "").Trim();
-
                                 giocatore.cognome = pezzi[1].Replace("C:", "").Trim();
-
                                 giocatore.nickname = pezzi[2].Replace("Nick:", "").Trim();
-
+                                giocatore.punteggio = int.Parse(pezzi[3].Replace("Score:", "").Trim());
                                 giocatore.gioco.titolo = pezzi[4].Replace("Titolo:", "").Trim();
-
                                 giocatore.gioco.tipologia = pezzi[5].Replace("Tipo:", "").Trim();
+                                //--------------------------------------------------------------
                                 Partecipante.Add(giocatore);
                                 lstregistrazioneutenti.Items.Add("N: " + giocatore.nome + " |" + "C: " + giocatore.cognome + " |" + "Nick: " + giocatore.nickname + " |" + "Score: " + giocatore.punteggio + " |" + "Titolo: " + giocatore.gioco.titolo + " |" + "Tipo: " + giocatore.gioco.tipologia);
                             }
