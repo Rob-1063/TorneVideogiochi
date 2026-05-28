@@ -56,6 +56,11 @@
             label2 = new Label();
             picboxavatarG = new PictureBox();
             lblnickname = new Label();
+            lblinfogioco = new Label();
+            lbltipologiaG = new Label();
+            lblpunteggioG = new Label();
+            btncercaG = new Button();
+            lblvideogioconome = new Label();
             ((System.ComponentModel.ISupportInitialize)picboxprofilogiocatore).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picboxavatarG).BeginInit();
             SuspendLayout();
@@ -137,7 +142,7 @@
             lbltipgioco.AutoSize = true;
             lbltipgioco.Location = new Point(13, 159);
             lbltipgioco.Name = "lbltipgioco";
-            lbltipgioco.Size = new Size(107, 15);
+            lbltipgioco.Size = new Size(106, 15);
             lbltipgioco.TabIndex = 9;
             lbltipgioco.Text = "TIPOLOGIA GIOCO";
             // 
@@ -220,7 +225,7 @@
             // lblprofiligiocatori
             // 
             lblprofiligiocatori.AutoSize = true;
-            lblprofiligiocatori.Location = new Point(913, 77);
+            lblprofiligiocatori.Location = new Point(861, 80);
             lblprofiligiocatori.Name = "lblprofiligiocatori";
             lblprofiligiocatori.Size = new Size(246, 15);
             lblprofiligiocatori.TabIndex = 18;
@@ -228,7 +233,7 @@
             // 
             // txtnomegiocatore
             // 
-            txtnomegiocatore.Location = new Point(947, 95);
+            txtnomegiocatore.Location = new Point(895, 98);
             txtnomegiocatore.Name = "txtnomegiocatore";
             txtnomegiocatore.Size = new Size(177, 23);
             txtnomegiocatore.TabIndex = 19;
@@ -238,7 +243,7 @@
             picboxprofilogiocatore.Image = (Image)resources.GetObject("picboxprofilogiocatore.Image");
             picboxprofilogiocatore.Location = new Point(839, 127);
             picboxprofilogiocatore.Name = "picboxprofilogiocatore";
-            picboxprofilogiocatore.Size = new Size(388, 401);
+            picboxprofilogiocatore.Size = new Size(319, 291);
             picboxprofilogiocatore.TabIndex = 20;
             picboxprofilogiocatore.TabStop = false;
             // 
@@ -293,7 +298,7 @@
             picboxavatarG.BackColor = Color.Transparent;
             picboxavatarG.BackgroundImageLayout = ImageLayout.None;
             picboxavatarG.Image = (Image)resources.GetObject("picboxavatarG.Image");
-            picboxavatarG.Location = new Point(1114, 141);
+            picboxavatarG.Location = new Point(1042, 141);
             picboxavatarG.Name = "picboxavatarG";
             picboxavatarG.Size = new Size(98, 96);
             picboxavatarG.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -311,11 +316,71 @@
             lblnickname.TabIndex = 26;
             lblnickname.Text = "-";
             // 
+            // lblinfogioco
+            // 
+            lblinfogioco.AutoSize = true;
+            lblinfogioco.BackColor = Color.Black;
+            lblinfogioco.Font = new Font("Sitka Heading", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblinfogioco.ForeColor = Color.AliceBlue;
+            lblinfogioco.Location = new Point(853, 299);
+            lblinfogioco.Name = "lblinfogioco";
+            lblinfogioco.Size = new Size(133, 18);
+            lblinfogioco.TabIndex = 27;
+            lblinfogioco.Text = "INFORMAZIONI GIOCO:";
+            // 
+            // lbltipologiaG
+            // 
+            lbltipologiaG.AutoSize = true;
+            lbltipologiaG.BackColor = Color.Black;
+            lbltipologiaG.ForeColor = Color.AliceBlue;
+            lbltipologiaG.Location = new Point(853, 386);
+            lbltipologiaG.Name = "lbltipologiaG";
+            lbltipologiaG.Size = new Size(12, 15);
+            lbltipologiaG.TabIndex = 28;
+            lbltipologiaG.Text = "-";
+            // 
+            // lblpunteggioG
+            // 
+            lblpunteggioG.AutoSize = true;
+            lblpunteggioG.BackColor = Color.Black;
+            lblpunteggioG.ForeColor = Color.AliceBlue;
+            lblpunteggioG.Location = new Point(853, 356);
+            lblpunteggioG.Name = "lblpunteggioG";
+            lblpunteggioG.Size = new Size(12, 15);
+            lblpunteggioG.TabIndex = 29;
+            lblpunteggioG.Text = "-";
+            // 
+            // btncercaG
+            // 
+            btncercaG.Location = new Point(1114, 80);
+            btncercaG.Name = "btncercaG";
+            btncercaG.Size = new Size(105, 41);
+            btncercaG.TabIndex = 30;
+            btncercaG.Text = "CERCA GIOCATORE";
+            btncercaG.UseVisualStyleBackColor = true;
+            btncercaG.Click += btncercaG_Click;
+            // 
+            // lblvideogioconome
+            // 
+            lblvideogioconome.AutoSize = true;
+            lblvideogioconome.BackColor = Color.Black;
+            lblvideogioconome.ForeColor = Color.AliceBlue;
+            lblvideogioconome.Location = new Point(853, 326);
+            lblvideogioconome.Name = "lblvideogioconome";
+            lblvideogioconome.Size = new Size(12, 15);
+            lblvideogioconome.TabIndex = 31;
+            lblvideogioconome.Text = "-";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1369, 752);
+            Controls.Add(lblvideogioconome);
+            Controls.Add(btncercaG);
+            Controls.Add(lblpunteggioG);
+            Controls.Add(lbltipologiaG);
+            Controls.Add(lblinfogioco);
             Controls.Add(lblnickname);
             Controls.Add(picboxavatarG);
             Controls.Add(label2);
@@ -380,5 +445,10 @@
         private Label label2;
         private PictureBox picboxavatarG;
         private Label lblnickname;
+        private Label lblinfogioco;
+        private Label lbltipologiaG;
+        private Label lblpunteggioG;
+        private Button btncercaG;
+        private Label lblvideogioconome;
     }
 }

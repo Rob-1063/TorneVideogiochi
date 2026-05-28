@@ -14,6 +14,7 @@ namespace progettoTorneoVideogiochi
 
         string Percorsofile = "StampaPartecipanti.txt";
         string PercorsoFilePartecGioco = "StampaPartecipantiAdUnGioco.txt";
+        string PercorsoFileGiocatore = "StampaInfoGiocatore.txt";
         //dichiarazione struct Videogioco
         struct Videogioco
         {
@@ -172,8 +173,54 @@ namespace progettoTorneoVideogiochi
                 }
             }
         }
-    
-        
+
+        void CercaGiocatore()
+        {
+            foreach(Giocatore g in Partecipante)
+            {
+                if (g.nickname == txtnomegiocatore.Text)
+                {
+                    lblnomeG.Text = g.nome;
+                    lblcognomeG.Text = g.cognome;
+                    lblnickname.Text= g.nickname;
+                    lblpunteggioG.Text = Convert.ToString(g.punteggio);
+                    lbltipologiaG.Text = g.gioco.tipologia;
+                    lblvideogioconome.Text = g.gioco.titolo;
+
+                    File.WriteAllText(PercorsoFileGiocatore, String.Empty);
+                    if (Partecipante.Count == 0)
+                    {
+                        MessageBox.Show("Lista Vuota");
+                        return;
+                    }
+                    try
+                    {
+                        using (StreamWriter sw = new StreamWriter(PercorsoFileGiocatore, false))
+                        {
+                            sw.WriteLine(g.Scrivi());
+                        }
+
+                        MessageBox.Show("Dati salvati con successo nel file");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Errore nel salvataggio dati");
+                    }
+                }
+            }
+        }
+
+        void PulisciLabel()
+        {
+
+            lblnomeG.Text = string.Empty;
+            lblcognomeG.Text = string.Empty;
+            lblnickname.Text = string.Empty;
+            lblpunteggioG.Text = string.Empty;
+            lbltipologiaG.Text = string.Empty;
+            lblvideogioconome.Text = string.Empty;
+        }
+
 
         //Bottone sul quale si salva la lista e la si stampa nella list box 
         private void btncarica_Click(object sender, EventArgs e)
@@ -203,6 +250,12 @@ namespace progettoTorneoVideogiochi
         private void btnripulirefile_Click(object sender, EventArgs e)
         {
             File.WriteAllText(Percorsofile, String.Empty);
+        }
+
+        private void btncercaG_Click(object sender, EventArgs e)
+        {
+            PulisciLabel();
+            CercaGiocatore();
         }
     }
 
