@@ -15,6 +15,7 @@ namespace progettoTorneoVideogiochi
         string Percorsofile = "StampaPartecipanti.txt";
         string PercorsoFilePartecGioco = "StampaPartecipantiAdUnGioco.txt";
         string PercorsoFileGiocatore = "StampaInfoGiocatore.txt";
+        int V = 0;
         //dichiarazione struct Videogioco
         struct Videogioco
         {
@@ -141,7 +142,7 @@ namespace progettoTorneoVideogiochi
                 MessageBox.Show("Errore durante la lettura!" + ex.Message);
             }
         }
-
+        //procedura che mi serve per cercare il videogioco tramite la textbox e salvare su un file apparte
         void cercaVideogioco()
         {
             lstregistrazioneutenti.Items.Clear();
@@ -174,15 +175,16 @@ namespace progettoTorneoVideogiochi
             }
         }
 
+        //procedura che mi serve per stampare tutte le informazioni personali del giocatore che viene cercato tramite una textbox e stampato su label
         void CercaGiocatore()
         {
-            foreach(Giocatore g in Partecipante)
+            foreach (Giocatore g in Partecipante)
             {
                 if (g.nickname == txtnomegiocatore.Text)
                 {
                     lblnomeG.Text = g.nome;
                     lblcognomeG.Text = g.cognome;
-                    lblnickname.Text= g.nickname;
+                    lblnickname.Text = g.nickname;
                     lblpunteggioG.Text = Convert.ToString(g.punteggio);
                     lbltipologiaG.Text = g.gioco.tipologia;
                     lblvideogioconome.Text = g.gioco.titolo;
@@ -210,6 +212,7 @@ namespace progettoTorneoVideogiochi
             }
         }
 
+        //funzione che mi serve per pulire le label
         void PulisciLabel()
         {
 
@@ -221,6 +224,36 @@ namespace progettoTorneoVideogiochi
             lblvideogioconome.Text = string.Empty;
         }
 
+        //funzione che mi serve per fare la classifica del gioco *ma non ancora completa*
+        void classificaGioco()
+        {
+            List<Giocatore> listaGioco = new List<Giocatore>();
+            foreach (Giocatore g in Partecipante)
+            {
+                if (g.gioco.titolo == txtclassifica.Text)
+                {
+                    listaGioco.Add(g);
+                }
+            }
+
+            V = listaGioco.Count;
+
+            for (int i = 0; i < V - 1; i++)
+            {
+                for (int j = 0; j < V - i - 1; j++)
+                {
+                    if (listaGioco[j].punteggio > listaGioco[j + 1].punteggio)
+                    {
+                        Giocatore temp = listaGioco[j];
+                        listaGioco[j] = listaGioco[j + 1];
+                        listaGioco[j + 1] = temp;
+                    }
+                }
+            }
+            
+        }
+
+        
 
         //Bottone sul quale si salva la lista e la si stampa nella list box 
         private void btncarica_Click(object sender, EventArgs e)
@@ -256,6 +289,13 @@ namespace progettoTorneoVideogiochi
         {
             PulisciLabel();
             CercaGiocatore();
+        }
+
+        private void btncreaclassifica_Click(object sender, EventArgs e)
+        {
+            lstclassifica.Items.Clear();
+            classificaGioco();
+            lstclassifica.Items.Add(classificaGioco);
         }
     }
 

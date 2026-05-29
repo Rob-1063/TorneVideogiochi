@@ -61,51 +61,57 @@
             lblpunteggioG = new Label();
             btncercaG = new Button();
             lblvideogioconome = new Label();
+            lstclassifica = new ListBox();
+            lblclassificagioco = new Label();
+            txtclassifica = new TextBox();
+            label4 = new Label();
+            btncreaclassifica = new Button();
             ((System.ComponentModel.ISupportInitialize)picboxprofilogiocatore).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picboxavatarG).BeginInit();
             SuspendLayout();
             // 
             // btncarica
             // 
-            btncarica.Location = new Point(51, 194);
+            btncarica.BackColor = Color.Yellow;
+            btncarica.Location = new Point(59, 194);
             btncarica.Name = "btncarica";
             btncarica.Size = new Size(160, 43);
             btncarica.TabIndex = 0;
             btncarica.Text = "CARICA";
-            btncarica.UseVisualStyleBackColor = true;
+            btncarica.UseVisualStyleBackColor = false;
             btncarica.Click += btncarica_Click;
             // 
             // txtnome
             // 
-            txtnome.Location = new Point(125, 40);
+            txtnome.Location = new Point(141, 38);
             txtnome.Name = "txtnome";
             txtnome.Size = new Size(100, 23);
             txtnome.TabIndex = 1;
             // 
             // txtcognome
             // 
-            txtcognome.Location = new Point(125, 69);
+            txtcognome.Location = new Point(141, 67);
             txtcognome.Name = "txtcognome";
             txtcognome.Size = new Size(100, 23);
             txtcognome.TabIndex = 2;
             // 
             // txtnickname
             // 
-            txtnickname.Location = new Point(125, 98);
+            txtnickname.Location = new Point(141, 96);
             txtnickname.Name = "txtnickname";
             txtnickname.Size = new Size(100, 23);
             txtnickname.TabIndex = 3;
             // 
             // txttipologiagioco
             // 
-            txttipologiagioco.Location = new Point(125, 156);
+            txttipologiagioco.Location = new Point(141, 154);
             txttipologiagioco.Name = "txttipologiagioco";
             txttipologiagioco.Size = new Size(100, 23);
             txttipologiagioco.TabIndex = 4;
             // 
             // txtnomegioco
             // 
-            txtnomegioco.Location = new Point(125, 127);
+            txtnomegioco.Location = new Point(141, 125);
             txtnomegioco.Name = "txtnomegioco";
             txtnomegioco.Size = new Size(100, 23);
             txtnomegioco.TabIndex = 5;
@@ -113,45 +119,50 @@
             // lblnome
             // 
             lblnome.AutoSize = true;
-            lblnome.Location = new Point(77, 43);
+            lblnome.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblnome.Location = new Point(88, 39);
             lblnome.Name = "lblnome";
-            lblnome.Size = new Size(42, 15);
+            lblnome.Size = new Size(47, 17);
             lblnome.TabIndex = 6;
             lblnome.Text = "NOME";
             // 
             // lblcognome
             // 
             lblcognome.AutoSize = true;
-            lblcognome.Location = new Point(52, 72);
+            lblcognome.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblcognome.Location = new Point(61, 68);
             lblcognome.Name = "lblcognome";
-            lblcognome.Size = new Size(67, 15);
+            lblcognome.Size = new Size(74, 17);
             lblcognome.TabIndex = 7;
             lblcognome.Text = "COGNOME";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(51, 101);
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(59, 97);
             label3.Name = "label3";
-            label3.Size = new Size(68, 15);
+            label3.Size = new Size(76, 17);
             label3.TabIndex = 8;
             label3.Text = "NICKNAME";
             // 
             // lbltipgioco
             // 
             lbltipgioco.AutoSize = true;
-            lbltipgioco.Location = new Point(13, 159);
+            lbltipgioco.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbltipgioco.Location = new Point(13, 160);
             lbltipgioco.Name = "lbltipgioco";
-            lbltipgioco.Size = new Size(106, 15);
+            lbltipgioco.Size = new Size(122, 17);
             lbltipgioco.TabIndex = 9;
             lbltipgioco.Text = "TIPOLOGIA GIOCO";
             // 
             // lblnomegioco
             // 
             lblnomegioco.AutoSize = true;
-            lblnomegioco.Location = new Point(40, 130);
+            lblnomegioco.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblnomegioco.Location = new Point(47, 126);
             lblnomegioco.Name = "lblnomegioco";
-            lblnomegioco.Size = new Size(79, 15);
+            lblnomegioco.Size = new Size(88, 17);
             lblnomegioco.TabIndex = 10;
             lblnomegioco.Text = "NOMEGIOCO";
             // 
@@ -160,7 +171,7 @@
             lstregistrazioneutenti.FormattingEnabled = true;
             lstregistrazioneutenti.HorizontalScrollbar = true;
             lstregistrazioneutenti.ItemHeight = 15;
-            lstregistrazioneutenti.Location = new Point(241, 29);
+            lstregistrazioneutenti.Location = new Point(260, 29);
             lstregistrazioneutenti.Name = "lstregistrazioneutenti";
             lstregistrazioneutenti.RightToLeft = RightToLeft.No;
             lstregistrazioneutenti.Size = new Size(498, 229);
@@ -168,27 +179,29 @@
             // 
             // btnsalvafile
             // 
-            btnsalvafile.Location = new Point(241, 264);
+            btnsalvafile.BackColor = Color.LawnGreen;
+            btnsalvafile.Location = new Point(260, 264);
             btnsalvafile.Name = "btnsalvafile";
-            btnsalvafile.Size = new Size(127, 53);
+            btnsalvafile.Size = new Size(230, 62);
             btnsalvafile.TabIndex = 12;
             btnsalvafile.Text = "Salva nel file";
-            btnsalvafile.UseVisualStyleBackColor = true;
+            btnsalvafile.UseVisualStyleBackColor = false;
             btnsalvafile.Click += btnsalvafile_Click;
             // 
             // btnimportafile
             // 
-            btnimportafile.Location = new Point(374, 264);
+            btnimportafile.BackColor = Color.Cyan;
+            btnimportafile.Location = new Point(538, 264);
             btnimportafile.Name = "btnimportafile";
-            btnimportafile.Size = new Size(127, 53);
+            btnimportafile.Size = new Size(220, 62);
             btnimportafile.TabIndex = 13;
             btnimportafile.Text = "Importa nel file";
-            btnimportafile.UseVisualStyleBackColor = true;
+            btnimportafile.UseVisualStyleBackColor = false;
             btnimportafile.Click += btnimportafile_Click;
             // 
             // btnripulirefile
             // 
-            btnripulirefile.Location = new Point(1198, 688);
+            btnripulirefile.Location = new Point(1198, 798);
             btnripulirefile.Name = "btnripulirefile";
             btnripulirefile.Size = new Size(159, 52);
             btnripulirefile.TabIndex = 14;
@@ -198,7 +211,7 @@
             // 
             // txtcercagioco
             // 
-            txtcercagioco.Location = new Point(35, 361);
+            txtcercagioco.Location = new Point(37, 361);
             txtcercagioco.Name = "txtcercagioco";
             txtcercagioco.Size = new Size(239, 23);
             txtcercagioco.TabIndex = 15;
@@ -206,7 +219,7 @@
             // lblcercagioco
             // 
             lblcercagioco.AutoSize = true;
-            lblcercagioco.Location = new Point(35, 343);
+            lblcercagioco.Location = new Point(37, 343);
             lblcercagioco.Name = "lblcercagioco";
             lblcercagioco.Size = new Size(204, 15);
             lblcercagioco.TabIndex = 16;
@@ -214,7 +227,7 @@
             // 
             // btncercavideogioco
             // 
-            btncercavideogioco.Location = new Point(290, 343);
+            btncercavideogioco.Location = new Point(292, 343);
             btncercavideogioco.Name = "btncercavideogioco";
             btncercavideogioco.Size = new Size(108, 41);
             btncercavideogioco.TabIndex = 17;
@@ -273,11 +286,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Black;
-            label1.Font = new Font("Sitka Heading", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Sitka Heading", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.AliceBlue;
-            label1.Location = new Point(853, 156);
+            label1.Location = new Point(853, 151);
             label1.Name = "label1";
-            label1.Size = new Size(103, 18);
+            label1.Size = new Size(140, 23);
             label1.TabIndex = 23;
             label1.Text = "DATI PERSONALI:";
             // 
@@ -285,11 +298,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Black;
-            label2.Font = new Font("Sitka Heading", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Sitka Heading", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.AliceBlue;
-            label2.Location = new Point(853, 240);
+            label2.Location = new Point(852, 235);
             label2.Name = "label2";
-            label2.Size = new Size(98, 18);
+            label2.Size = new Size(134, 23);
             label2.TabIndex = 24;
             label2.Text = "NOME IN GIOCO:";
             // 
@@ -320,11 +333,11 @@
             // 
             lblinfogioco.AutoSize = true;
             lblinfogioco.BackColor = Color.Black;
-            lblinfogioco.Font = new Font("Sitka Heading", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblinfogioco.Font = new Font("Sitka Heading", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblinfogioco.ForeColor = Color.AliceBlue;
-            lblinfogioco.Location = new Point(853, 299);
+            lblinfogioco.Location = new Point(853, 303);
             lblinfogioco.Name = "lblinfogioco";
-            lblinfogioco.Size = new Size(133, 18);
+            lblinfogioco.Size = new Size(181, 23);
             lblinfogioco.TabIndex = 27;
             lblinfogioco.Text = "INFORMAZIONI GIOCO:";
             // 
@@ -371,11 +384,61 @@
             lblvideogioconome.TabIndex = 31;
             lblvideogioconome.Text = "-";
             // 
+            // lstclassifica
+            // 
+            lstclassifica.FormattingEnabled = true;
+            lstclassifica.ItemHeight = 15;
+            lstclassifica.Location = new Point(51, 456);
+            lstclassifica.Name = "lstclassifica";
+            lstclassifica.Size = new Size(333, 229);
+            lstclassifica.TabIndex = 33;
+            // 
+            // lblclassificagioco
+            // 
+            lblclassificagioco.AutoSize = true;
+            lblclassificagioco.Location = new Point(54, 438);
+            lblclassificagioco.Name = "lblclassificagioco";
+            lblclassificagioco.Size = new Size(183, 15);
+            lblclassificagioco.TabIndex = 34;
+            lblclassificagioco.Text = "CLASSIFICA DI UN CERTO GIOCO:";
+            // 
+            // txtclassifica
+            // 
+            txtclassifica.Location = new Point(401, 533);
+            txtclassifica.Name = "txtclassifica";
+            txtclassifica.Size = new Size(329, 23);
+            txtclassifica.TabIndex = 35;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(401, 515);
+            label4.Name = "label4";
+            label4.Size = new Size(329, 15);
+            label4.TabIndex = 36;
+            label4.Text = "INSERIRE IL NOME DEL GIOCO PER FORMARE LA CLASSIFICA";
+            // 
+            // btncreaclassifica
+            // 
+            btncreaclassifica.Location = new Point(464, 562);
+            btncreaclassifica.Name = "btncreaclassifica";
+            btncreaclassifica.Size = new Size(205, 58);
+            btncreaclassifica.TabIndex = 37;
+            btncreaclassifica.Text = "CREA CLASSIFICA";
+            btncreaclassifica.UseVisualStyleBackColor = true;
+            btncreaclassifica.Click += btncreaclassifica_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1369, 752);
+            BackColor = Color.Tan;
+            ClientSize = new Size(1369, 862);
+            Controls.Add(btncreaclassifica);
+            Controls.Add(label4);
+            Controls.Add(txtclassifica);
+            Controls.Add(lblclassificagioco);
+            Controls.Add(lstclassifica);
             Controls.Add(lblvideogioconome);
             Controls.Add(btncercaG);
             Controls.Add(lblpunteggioG);
@@ -450,5 +513,10 @@
         private Label lblpunteggioG;
         private Button btncercaG;
         private Label lblvideogioconome;
+        private ListBox lstclassifica;
+        private Label lblclassificagioco;
+        private TextBox txtclassifica;
+        private Label label4;
+        private Button btncreaclassifica;
     }
 }
